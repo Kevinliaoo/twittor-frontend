@@ -1,0 +1,51 @@
+@import "../components/globals";
+
+.newpost {
+    margin: 2rem auto;
+    width: 100%;
+    @include column-ceter;
+    align-items: flex-start;
+
+    &__content {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+
+        img {
+            height: 5rem; 
+            width: 5rem;
+            border-radius: 50%;
+        }
+        textarea {
+            font-family: $font;
+            font-size: 1.6rem;
+            color: $text-color;
+            background-color: $background-color;
+            overflow: scroll; 
+            resize: none;
+            outline: none;
+            height: 8vh;
+            width: 100%;
+            margin-left: 1rem;
+            margin-top: 0.7rem;
+            border: none;
+        }
+    }
+
+    .buttons {
+        width: 100%;
+
+        .twitbutton {
+            position: relative;
+            float: right;
+            width: 18vw;
+            height: 6vh;
+            margin-right: 0.5rem;
+            border-radius: 25px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: $text-color; 
+            background-color: $main-color;
+        }
+    }
+}

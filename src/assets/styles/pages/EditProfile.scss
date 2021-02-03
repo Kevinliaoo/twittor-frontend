@@ -1,0 +1,69 @@
+@import '../components/globals';
+
+.edit_profile_content {
+    @include column-ceter;
+    width: 100%;
+    margin-top: 4vh;
+    font-family: $font;
+
+    .tittle_wrapper {
+        display: flex; 
+        justify-content: space-around;
+        margin-bottom: 2vh;
+        color: $text-color;
+        font-size: 1.4rem;
+    }
+
+    .edit_profile__form {
+        @include column-ceter;
+        width: 100%;
+
+        input, textarea {
+            height: 4rem;
+            width: 80%;
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+            outline: none;
+            color: $text-color;
+            background-color: $background-color;
+            padding: auto; 
+            padding-left: 1.5rem;
+            @include round-border;
+        }
+        textarea {
+            padding-top: 1.5rem;
+            height: 8rem;
+            font-family: $font;
+        }
+        ::placeholder {
+            color: makeTransparent($border-color, 0.7);
+        }
+
+        .form__buttons {
+            display: flex; 
+            justify-content: space-between;
+
+            button {
+                width: 12rem; 
+                height: 4rem;
+                border-radius: 25px;
+                border: none;
+                font-size: $title-size;
+            }
+            .save_button {
+                background-color: $main-color;
+                margin-right: 1rem;
+            }
+            .save_button:hover {
+                background-color: $hover-color;
+            }
+            .cancel_button {
+                margin-left: 1rem;
+                background-color: $cancel-button-color;
+            }
+            .cancel_button:hover {
+                background-color: $cancel-button-hover-color;
+            }
+        }
+    }
+}

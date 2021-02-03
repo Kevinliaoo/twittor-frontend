@@ -1,0 +1,71 @@
+$background-color: rgb(5, 53, 84); 
+$main-color: rgb(3, 194, 252);
+$hover-color: rgba(3, 194, 252, 0.7);
+$border-color: rgb(204, 200, 200); 
+$text-color: white;
+$text-color-black: black;
+$cancel-button-color: rgb(255, 54, 54); 
+$cancel-button-hover-color: rgba(255, 54, 54, 0.7); 
+
+$font: "verdana";
+
+$title-size: 2rem;
+
+@mixin column-ceter {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin round-border {
+    border: .2rem solid $border-color; 
+    border-radius: 2.5rem;
+}
+
+@mixin buttons {
+    width: 70vw; 
+    height: 2.8rem;
+    border-radius: 2.5rem;
+    border: none;
+    background-color: $main-color;
+    font-size: 16px;
+    margin-bottom: 2vh;
+}
+
+@mixin inputs {
+    width: 80vw;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    outline: none;
+    color: $text-color-black; 
+    padding: 1.5rem 0 1.5rem 2rem;
+}
+
+@function makeTransparent ($color, $transparency) {
+    @return rgba($color, $transparency);
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%; 
+    font-family: $font;
+    background-color: $background-color;
+}
+
+::placeholder {
+    color: $border-color;
+}
+
+button:focus {
+    outline:0;
+}
+button:hover {
+    cursor: pointer
+}

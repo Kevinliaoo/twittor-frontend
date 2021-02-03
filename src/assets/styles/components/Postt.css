@@ -1,0 +1,59 @@
+* {
+    border: 0px; 
+    margin: 0px;
+    color: white;
+}
+
+.postcontent {
+    border: 1px solid rgb(134, 145, 141);
+    display: flex; 
+    flex-direction: column;
+    padding: 2vh;
+}
+
+.profilepicture {
+    width: 5vh; 
+    height: 5vh;
+    object-fit: cover;
+}
+
+.maincontent {
+    display: flex;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.username, .time {
+    color: rgb(134, 145, 141);
+    margin-left: 5px;
+}
+
+.separator {
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+
+.maincontent__maindata {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.postactions {
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-around;
+}
+
+.comment, .like {
+    display: flex;
+}
+.comment:hover, .like:hover {
+    cursor: pointer;
+}
+
+.commentsnumbers, .likesnumber {
+    margin-top: 1vh;
+    margin-left: 1vh;
+}

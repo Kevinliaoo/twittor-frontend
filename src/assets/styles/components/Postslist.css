@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    margin-bottom: 3vh; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1vh;
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "verdana";
+  background-color: #053554;
+}
+
+::placeholder {
+  color: #ccc8c8;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.newpost {
+  margin: 2rem auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+.newpost__content {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.newpost__content img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.newpost__content textarea {
+  font-family: "verdana";
+  font-size: 1.6rem;
+  color: white;
+  background-color: #053554;
+  overflow: scroll;
+  resize: none;
+  outline: none;
+  height: 8vh;
+  width: 100%;
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+  border: none;
+}
+.newpost .buttons {
+  width: 100%;
+}
+.newpost .buttons .twitbutton {
+  position: relative;
+  float: right;
+  width: 18vw;
+  height: 6vh;
+  margin-right: 0.5rem;
+  border-radius: 25px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #03c2fc;
+}

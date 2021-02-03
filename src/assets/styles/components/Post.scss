@@ -1,0 +1,63 @@
+@import "../components/globals";
+
+.postcontent {
+    border: 1px solid $border-color;
+    display: flex; 
+    flex-direction: column;
+    padding: 0.7rem;
+
+    .maincontent {
+        display: flex;
+
+        &__image img {
+            width: 3.8rem; 
+            height: 3.8rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &__maindata {
+            display: flex;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+
+            .name {
+                font-weight: bold;
+                color: $text-color;
+            }
+            .username, .time {
+                color: $border-color;
+                margin-left: 5px;
+            }
+        }
+
+        .separator {
+            margin-top: 0.3rem;
+            margin-left: 0.8rem;
+        }
+
+        &__content {
+            font-size: 1.8rem;
+            color: $text-color;
+        }
+    }
+
+    .postactions {
+        display: flex;
+        margin-top: 2vh;
+        justify-content: space-around;
+
+        .comment, .like {
+            display: flex;
+        }
+        .comment:hover, .like:hover {
+            cursor: pointer;
+        }
+        .commentsnumbers, .likesnumber {
+            margin-top: 1vh;
+            margin-left: 1vh;
+            color: $text-color;
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "../components/globals";
+
+.header {
+    max-height: 9vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 2vh;
+}
+
+.logo {
+    width: 7vh;
+    height: 7vh;
+    margin-top: 8vh;
+}

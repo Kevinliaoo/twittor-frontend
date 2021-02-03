@@ -1,0 +1,23 @@
+@import "../components/globals";
+
+.navbar {
+    @include column-ceter;
+
+    &__section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        img {
+            height: 4rem;
+            width: 4rem;
+        }
+        p {
+            margin-left: 2rem;
+            font-size: $title-size;
+            text-decoration: none;
+            color: $text-color;
+        }
+    }
+}

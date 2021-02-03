@@ -1,0 +1,71 @@
+@import "../components/globals";
+
+.header {
+    position: sticky;
+    top: 1rem;
+}
+
+.logo {
+    margin-top: 0;
+}
+
+.homepage__content {
+    width: 95vw;
+    margin: auto;
+}
+
+.right {
+    display: none;
+}
+.right.active {
+    top: 11rem;
+    margin: 0;
+    width: 100vw;
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    display: none;
+}
+.left.active {
+    top: 13rem;
+    width: 100vw;
+    margin: 0;
+    display: inline;
+    position: relative;
+}
+
+.middle {
+    display: inline;
+}
+.middle.hidden {
+    display: none;
+}
+
+
+@media (min-width: 450px) {
+    .homepage__content {
+        display: flex;
+        width: 95%;
+    }
+
+    .homepage__content > div {
+        display: inline;
+    }
+
+    .middle {
+        width: 50%;
+    }
+
+    .left {
+        width: 20%; 
+    }
+    
+    .right {
+        width: 30%;
+        position: absolute;
+        right: 0;
+    }
+}

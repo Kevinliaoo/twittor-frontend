@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "verdana";
+  background-color: #053554;
+}
+
+::placeholder {
+  color: #ccc8c8;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.edit_profile_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 4vh;
+  font-family: "verdana";
+}
+.edit_profile_content .tittle_wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+  color: white;
+  font-size: 1.4rem;
+}
+.edit_profile_content .edit_profile__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.edit_profile_content .edit_profile__form input, .edit_profile_content .edit_profile__form textarea {
+  height: 4rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  outline: none;
+  color: white;
+  background-color: #053554;
+  padding: auto;
+  padding-left: 1.5rem;
+  border: 0.2rem solid #ccc8c8;
+  border-radius: 2.5rem;
+}
+.edit_profile_content .edit_profile__form textarea {
+  padding-top: 1.5rem;
+  height: 8rem;
+  font-family: "verdana";
+}
+.edit_profile_content .edit_profile__form ::placeholder {
+  color: rgba(204, 200, 200, 0.7);
+}
+.edit_profile_content .edit_profile__form .form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.edit_profile_content .edit_profile__form .form__buttons button {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 2rem;
+}
+.edit_profile_content .edit_profile__form .form__buttons .save_button {
+  background-color: #03c2fc;
+  margin-right: 1rem;
+}
+.edit_profile_content .edit_profile__form .form__buttons .save_button:hover {
+  background-color: rgba(3, 194, 252, 0.7);
+}
+.edit_profile_content .edit_profile__form .form__buttons .cancel_button {
+  margin-left: 1rem;
+  background-color: #ff3636;
+}
+.edit_profile_content .edit_profile__form .form__buttons .cancel_button:hover {
+  background-color: rgba(255, 54, 54, 0.7);
+}
